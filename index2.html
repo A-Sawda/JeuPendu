@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8">
+		<META name="author" content="Sawda">
+		<meta name="Description" content="Jeu pendu">
+		<meta name="keywords" content="Jeu, pendu">
+		<title>Jeu pendu</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+        <script type="text/javascript" src="dictionnaire.js"> </script>
+        
+    </head>
+
+    <body>
+
+        <div class="centre">
+            <h1>Jeu pendu (Version où la machine devine le mot choisi par un humain)</h1> 
+        </div>
+
+        <div id="idTableDico">
+
+        </div>
+
+        <div>
+            <p> Saisissez un mot parmi les mots de la liste ci-dessus </p>
+            <p> <input type="text" id="motSaisiHom" /> </p>
+        </div>
+
+        <div id="positionPhoto">
+           <img id="imgMachine" width="100" height="100">
+        </div>
+
+        <div>
+            <p>Mot à deviner par la machine</p>
+        </div>
+
+        <div id="divMotMachine">
+
+        </div>
+
+        <div>
+            <input type="button" value="Faire jouer la machine" id="jouerMachine" />
+        </div>
+
+        <div id="statut">
+            <p id="gainMachine">La machine a gagné!</p> 
+            <p id="perteMachine">La machine a perdu!</p>
+        </div>
+
+        <script type="text/javascript" src="script2.js"> </script>
+
+    </body>
+
+</html>
