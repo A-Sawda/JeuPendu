@@ -1,2 +1,37 @@
 //Dictionnaire des mots
-let dictionnaire = ["SAWDA","AAZIZ", "DATOU", "TOUDA", "ABDOULAYE", "SEYDOU"];
+let dictionnaire = [
+                    "RESPECTUEUX", 
+                    "ASEPTISER", 
+                    "RELEVER",
+                    "MARIAGE",
+                    "SENTIER",
+                    "CHEMIN",
+                    "HEMORROIDE", 
+                    "GRAILLER", 
+                    "TRIBU",
+                    "ABREGER",
+                    "ADEPTE",
+                    "REFROTTER",
+                    "AEROBIQUE",
+                    "FRANGLAISE",
+                    "FRIGORIFUGER",
+                    "RAVACHIR",
+                    "AMPHIDELPHE",
+                    "AFFAIBLIR",
+                    "REVEILLER",
+                    "IMPORTANT",
+                    "GOMME",
+                    "ASSEMBLAGE",
+                    "MEUBLE",
+                    "ECOQUETER",
+                    "GODRONNER",
+                    "CONVENTION",
+                    "AUTOCENSURE",
+                    "FREQUENTER",
+                    "MAGNANIMISER",
+                    "CORRECTIONNALISER",
+                    "VACCINAL",
+                    "ENERGIE"
+                ];
+
+dictionnaire = dictionnaire.sort();

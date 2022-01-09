@@ -1,11 +1,14 @@
 
 
 
-.INF5 { background-color: #66ffa1; }
-.INF10 { background-color: #ffff4d; }
-.INF15 { background-color: #ffa64d; }
-.INF20 { background-color: #97776f; }
-.SUP20 { background-color: #b32400; }
+h1{
+    background-color: rgb(218, 154, 181);
+    text-align: center;
+}
+
+.pgrand{
+    font-size: 20px;
+}
 
 td {
     border: 1px solid black;
@@ -17,64 +20,12 @@ td {
 th {
     border: 1px solid black;
     text-align: center;
-    background-color: rgb(7, 114, 100);
+    background-color: rgb(126, 26, 81);
     color: white;
     font-style: bold;
     font-family: Times New Roman;
   }
 
-div.centre {
-    text-align: center;
-}
-
-div.gauche {
-    text-align: left;
-}
-
-div.droite {
-    text-align: right;
-}
-
-#vertf {
-    color: rgb(7, 114, 100);
-    font-family: Times New Roman;
-}
-
-#bleu {
-    background-color: rgb(187, 240, 233);
-    font-family: Times New Roman;
-}
-
-#vert {
-    background-color: rgb(167, 228, 25);
-    font-family: Times New Roman;
-}
-
-#rose {
-    background-color: rgb(230, 127, 158);
-    font-family: Times New Roman;
-}
-
-#jaune {
-    background-color: rgb(227, 230, 67);
-    font-family: Times New Roman;
-}
-
-#bleuf {
-    background-color: rgb(54, 125, 219);
-    font-family: Times New Roman;
-}
-
-#idMessage, #idMessage2 {
-    color: rgb(196, 47, 47);
-}
-
-h3.rouge {
-    color: rgb(114, 32, 7);
-    position: absolute;
-    bottom: 0px;
-    font-family: Times New Roman;
-}
 
 p {
     color: black;
@@ -83,19 +34,42 @@ p {
 }
 
 span{
-    font-size: 30px;
     color: black;
     font-weight: bold;
     font-family: Times New Roman;
 }
 
 input {
-    background-color: rgb(207, 207, 205);
-    border: 1px solid black;
-    color: black;
+    background-color: rgb(238, 241, 241);
+    border: 1px solid rgb(7, 7, 7);
+    color: rgb(196, 81, 81);
     font-weight: bold;
     font-family: Times New Roman;
     text-align: center;
-    position: absolute;
-    left: 50%;
+    font-size: 15px;
+}
+
+button{
+    background-color: rgb(100, 8, 65);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Times New Roman;
+}
+
+.vert {
+    color: rgb(41, 104, 63);
+    font-size: 20px;
+}
+
+.rouge {
+    color: #ce4523;
+}
+
+.orange {
+    color: #ffa64d;
+}
+
+div{
+     margin-bottom: 40px; 
 }

@@ -17,39 +17,32 @@
 
     <body>
 
-        <div class="centre">
-            <h1>Jeu pendu (Version où la machine devine le mot choisi par un humain)</h1> 
-        </div>
-
-        <div id="idTableDico">
-
-        </div>
-
         <div>
-            <p> Saisissez un mot parmi les mots de la liste ci-dessus </p>
-            <p> <input type="text" id="motSaisiHom" /> </p>
+            <h1>Jeu pendu (Version où la machine devine le mot choisi par un humain)</h1> 
+        </div> 
+
+        <div class="pgrand">
+            Saisissez un mot parmi les mots du tableau ci-dessous, puis appuyer sur entrée : 
+                <input type="text" id="motSaisiHom" /> 
+        </div>
+
+        <div id="lestirets" class="pgrand">
+                Appuyer sur ce bouton <input type="button" value="Faire jouer la machine" id="jouerMachine" /> pour faire jouer la machine.
+                Au fur et à mesure, les tirets seront remplacés par les lettres choisies par la machine.
+                <span id="divMotMachine" class="orange"></span>
         </div>
 
         <div id="positionPhoto">
            <img id="imgMachine" width="100" height="100">
         </div>
 
-        <div>
-            <p>Mot à deviner par la machine</p>
+        <div class="pgrand">
+            <span id="gainMachine" class="vert"> La machine a gagné! </span>
+            <span id="perteMachine"> <h3 class="rouge">La machine a perdu!</h3></span>
+            <span id="rejouer"><input type="button" value="Cliquer ici pour rejouer" id="refresh" /></span>
         </div>
 
-        <div id="divMotMachine">
-
-        </div>
-
-        <div>
-            <input type="button" value="Faire jouer la machine" id="jouerMachine" />
-        </div>
-
-        <div id="statut">
-            <p id="gainMachine">La machine a gagné!</p> 
-            <p id="perteMachine">La machine a perdu!</p>
-        </div>
+        <div id="idTableDico"></div>
 
         <script type="text/javascript" src="script2.js"> </script>
 

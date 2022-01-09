@@ -17,41 +17,35 @@
 
     <body onload="clickBoutonAlphabet()">
 
-        <div class="centre">
-            <h1>Jeu pendu</h1> 
-        </div>
-
         <div>
-            <input type="button" value="Rejouer" id="refresh" />
+            <h1>Bienvenue au Jeu pendu</h1>
+            <p class="pgrand">Vous avez droit au plus à 7 tentatives.
+            Vous aurez l'image du pendu pour savoir le nombre d'essaies qu'il vous reste.
+            Amusez-vous bien!!</p>
         </div>
 
         <div id="positionPhoto">
            <img id="img" width="100" height="100">
         </div>
 
-        <div>
-            <p>Mot à deviner</p>
+        <div id="divBouton"></div>
+
+        <div class="pgrand">
+            <span id="motADeviner">Mot à deviner</span>
+            <span id="motADevinerNonTrouver">Le mot à deviner était :</span>
+            <span id="motADevinerTrouver">Bravo, le mot à deviner est bien :</span>
+            <span id="divMot" class="orange"></span>
         </div>
 
-        <div id="divMot">
-
-        </div>
-
-        <div id="divBouton">
-            <p id="p0"></p>
-            <p id="p8"></p>
-            <p id="p17"></p>
-        </div>
-
-        <div id="statut">
-            <p id="gain">Vous avez gagné!</p> 
+        <div class="pgrand">
+            <span id="gain" class="vert">Vous avez gagné!</span>
+            <p id="textNom">Félicitations, vous faites parti des 10 premiers. Veuillez saisir votre nom et Cliquez sur entrée</p>
             <input type="text" id="nom">
-            <p id="perte">Vous avez perdu!</p>
+            <span id="perte" class="rouge">Vous avez perdu!</span>
+            <input type="button" value="Rejouer" id="refresh" />
         </div>
 
-        <div id="joueurTable">
-
-        </div>
+        <div id="joueurTable"></div>
 
         <script type="text/javascript" src="script.js"> </script>
 
