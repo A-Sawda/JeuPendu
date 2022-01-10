@@ -99,7 +99,7 @@ let motMachineMachine; //mot tirer aléatoirement dans dicReduitMachine
 let tablemotMachineMachine; //table contenant les lettres du mot choisi aléatoirement dans dicReduitMachine
 let randMachine2Machine; //choix d'un entier aléatoire pour tirer un mot aléatoirement dans tablemotMachineMachine
 let lettreMachineMachine; //lettre tirer aléatoirement dans tablemotMachineMachine
-let penaliteMachine=0;
+let penaliteMachine=0; //le nombre de pénalité
 let comptPenaliteMachine=0;
 let tabLettresMachine=[]; //Tabeau regroupant l'ensemble des lettres choisi lors d'une partie
 let lettreDejaChoisiMachine; //Vaut vrai ou faux
@@ -122,7 +122,7 @@ $("#motSaisiHom").change (function (event) {
     }
 }) ;
 
-
+//Lorsqu'on clique sur le bouton HTML jouerMachine
 $("#jouerMachine").click( function (event) {
     comptPenaliteMachine=0;
     randMachineMachine=entierAleatoire(0, dicReduitMachine.length-1);

@@ -27,15 +27,8 @@ th {
   }
 
 
-p {
+p, span {
     color: black;
-    font-weight: bold;
-    font-family: Times New Roman;
-}
-
-span{
-    color: black;
-    font-weight: bold;
     font-family: Times New Roman;
 }
 
