@@ -19,10 +19,10 @@ $("#rejouer").hide();
     table.append(tr1);
     let th1=$("<th></th>");
     tr1.append(th1);
-    th1.text("Numéro");
+    th1.text("Numéros");
     let th2=$("<th></th>");
     tr1.append(th2);
-    th2.text("Mot");
+    th2.text("Mots");
     for(let index = 0; index < dictionnaire.length; index++) {
         let tr=$("<tr></tr>");
         table.append(tr);
@@ -50,7 +50,7 @@ function choixHommeMachine(){
     for(let i in tableMotSaisiMachine){
         let spanTraitMachine = $("<span></span>");
         spanTraitMachine.attr('id', 'spanTraitMachine'+i);
-        spanTraitMachine.text('-');
+        spanTraitMachine.text(' - ');
         $("#divMotMachine").append(spanTraitMachine);
     
         let spanLettreMachine = $("<span></span>");

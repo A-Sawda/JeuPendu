@@ -1,33 +1,31 @@
+
+//section html à cacher
 $("#pAjoutMotDic").hide();
 $("#pSuppMotDic").hide();
 
 //window.localStorage.clear();
 
-tailleDico=dictionnaire.length;
-
+//supprimer un mot du dictionnaire
 $("#suppDic").click( function (event) { 
     $("#pSuppMotDic").show();
 });
-
-//Lorsque l'utilisateur choisi un mot
 $("#suppMotDic").change (function (event) {
     dictionnaire.splice(parseInt($(this).val())-1,1);
     miseAJourDico();
     $("#pSuppMotDic").hide();
 });
 
+//ajouter un mot dans le dictionnaire
 $("#ajoutDic").click( function (event) { 
     $("#pAjoutMotDic").show();
 });
-
-//Lorsque l'utilisateur choisi un mot
 $("#ajoutMotDic").change (function (event) {
     dictionnaire.push(($(this).val()).toUpperCase());
     miseAJourDico(); 
     $("#pAjoutMotDic").hide();
 });
 
-//Fonction pour afficher la liste des mots dans un tableau
+//Fonction pour afficher la liste des mots dans le dictionnaire
 (function dicoTable() {
     let divOrigine= $("#tableDico");
     let table = $("<table></table>")
@@ -36,10 +34,10 @@ $("#ajoutMotDic").change (function (event) {
     table.append(tr1);
     let th1=$("<th></th>");
     tr1.append(th1);
-    th1.text("Numéro");
+    th1.text("Numéros");
     let th2=$("<th></th>");
     tr1.append(th2);
-    th2.text("Mot");
+    th2.text("Mots");
     for(let index = 0; index < dictionnaire.length; index++) {
         let tr=$("<tr></tr>");
         tr.attr("id", "trMots" + index);
@@ -55,6 +53,7 @@ $("#ajoutMotDic").change (function (event) {
     }
 })();
 
+//fonction pour mettre à jour la liste des mots du dictionnaire
 function miseAJourDico(){
     dictionnaire.sort();
     for(let i in dictionnaire) {

@@ -19,6 +19,7 @@ let penalite=0; //Variable pour récupérer le nombre de penalité du joueur
 let rand=entierAleatoire(0, dictionnaire.length-1); //choix d'un entier aléatoire pour tirer un mot aléatoirement dans dictionnaire
 let motMachine=dictionnaire[rand]; //mot tirer aléatoirement dans dictionnaire
 let tailleMotMachine=motMachine.length; // taille mot tirer aléatoirement dans dictionnaire
+$("#motADeviner").text('Il y a '+tailleMotMachine+' lettres dans le mot à deviner :');
 let tableMotMachine=motMachine.split(''); //table contenant les lettres du mot choisi aléatoirement dans dictionnaire
 let motHomme=0; //Variable permettant de compter le nombre de lettres vraies que le joueur a eu
 let tabLettres=[]; //Tabeau regroupant l'ensemble des lettres choisi lors d'une partie
@@ -84,7 +85,7 @@ image();
     for(let i in tableMotMachine){
         let spanTrait = $("<span></span>");
         spanTrait.attr('id', 'spanTrait'+i);
-        spanTrait.text('-');
+        spanTrait.text(' - ');
         divMot.append(spanTrait);
         //récupérer les lettres du mot choisi par la machine
         let spanLettre = $("<span></span>");
@@ -202,7 +203,7 @@ function gain(){
     th1.text("Noms Joueurs");
     let th2 = $("<th></th>");
     tr1.append(th2);
-    th2.text("Penalite Joueurs");
+    th2.text("Pénalités Joueurs");
     for(let index = 1; index < 11; index++) {
         let trJoueurs = $("<tr></tr>");
         trJoueurs.attr("id", "trJoueurs" + index);

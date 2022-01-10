@@ -1,6 +1,6 @@
 let dictionnaire = [];
 
-//mettre dans le tableau les données dans le local storage
+//mettre dans dictionnaire les données
 (function dicoStorage(){
     if(localStorage.getItem('num0')!==null){
         i=0;
